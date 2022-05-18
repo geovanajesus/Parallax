@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: black;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+main{
+    display: block;
+    background-color: aliceblue;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index:8;
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% )}
+
+
+section.module.parallax-1{
+    background-image: url("https://www.maxmilhas.com.br/blog/wp-content/uploads/2016/05/aurora-boreal-finl%C3%A2ndia.jpg");
+}
+
+section.module.parallax-2{
+    background-image: url("https://s2.glbimg.com/tqG4ybAk8AJ1t12GYcQMbhP9YoU=/e.glbimg.com/og/ed/f/original/2019/07/29/cf309-prd-turismo-tailandia-chiang-mai.jpg");
+}
+
+section.module.parallax-3{
+    background-image: url("https://images.creativemarket.com/0.1.0/ps/9544968/1200/800/m1/fpnw/wm0/france-paris-louvre-museum-and-the-pyramid-rf9938-v2-.jpg?1607438225&s=3be6937f7469265e37109ac7aaf2d9fc");
+}
+
+section.module.parallax h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
